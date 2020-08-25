@@ -1,0 +1,7 @@
+<div class="top-bar">
+    <h1>Loja de CDs</h1>
+    <h3>Itens no carrinho: {{produtosNoCarrinho.length}}</h3>
+</div>
+
+
+<app-produto [receivedProducts]="produtos" (emitAddedProducts)="pullNumber($event)"></app-produto>

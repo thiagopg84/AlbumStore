@@ -1,0 +1,16 @@
+<div class="produtos">
+    <div class="card" *ngFor="let produto of receivedProducts">
+        <picture>
+            <img src="{{produto.imagem}}" alt="{{produto.nome}} - {{produto.titulo}}">
+        </picture>
+        <div class="card-title">
+            <p class="cd-author">{{produto.nome | uppercase}}</p>
+            <p class="cd-title">{{produto.titulo | uppercase}}</p>
+        </div>
+        <div class="card-preco">
+            <p>R$ {{produto.preco}}</p>
+        </div>
+        <button *ngIf="!produto.noCarrinho" class="btn-green" (click)="adicionaProduto(produto)">Adicionar ao carrinho</button>
+        <button *ngIf="produto.noCarrinho" class="btn-red" (click)="adicionaProduto(produto)">Remover do carrinho</button>
+    </div>
+</div>

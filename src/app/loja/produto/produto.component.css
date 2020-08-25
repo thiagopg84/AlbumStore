@@ -1,0 +1,89 @@
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+.card {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+/* picture {
+
+} */
+
+picture img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-title {
+    padding-top: 1.6rem;
+}
+
+.card-preco {
+    padding-top: 1rem;
+}
+
+.card-title p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card-preco p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card button {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    width: max-content;
+    
+
+    transition: all .2s;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+}
+
+.card button:active {
+    transform: translateY(0px);
+}
+
+.btn-green:hover {
+    background-color: lightgreen;
+    color: green;
+}
+
+.btn-red {
+    background-color: brown;
+    color: white;
+    transition: all .2s;
+}
+
+.btn-red:hover {
+    background-color: lightgray;
+    color: brown;
+    
+}
+
+.card .cd-title {
+    /* font-size: 1.8rem; */
+    font-weight: bolder;
+}
