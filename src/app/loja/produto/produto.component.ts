@@ -32,5 +32,4 @@ export class ProdutoComponent implements OnInit {
     console.log(this.arrayOfProducts);
     this.emitAddedProducts.emit(this.arrayOfProducts);
   }
-
 }

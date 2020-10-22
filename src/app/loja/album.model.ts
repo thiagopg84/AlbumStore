@@ -12,9 +12,5 @@ export class Album {
     }
     
     constructor(public preco: number, public imagem: string, public nome: string, public titulo: string ) {
-        this.preco = preco;
-        this.imagem = imagem;
-        this.nome = nome;
-        this.titulo = titulo;
     }
 }
